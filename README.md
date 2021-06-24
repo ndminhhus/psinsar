@@ -5,10 +5,10 @@ Unlike others tutorial, this recipie will try to cover 99% of the process includ
 
 My first advice is: You don't have to install every sofware/packages at onces. We only install a software/package when it is the barrier to prevent us from moving forward. In that way, you will understand what, why and when a certain action is needed. 
 
-1. Day 1: Define study area and download SLC Sentinel 1
+1. Define study area and download SLC Sentinel 1
 
-2. Day 2: Prepare input for StaMPS PSI
+2. Prepare input for StaMPS PSI
 
-3. Day 3: Installation 
+3. Install StaMPS, Matlab in Window Sub system for Linux (WSL) Ubuntu
 
-Day 4. : Analysis with StaMPS PS
+4. Analysis with StaMPS PS
