@@ -5,6 +5,7 @@
 5. cd ..
 6. nano StaMPS_CONFIG.bash
 7. export STAMPS="/home/your-path/StaMPS"
-8. mt_prep
-9. if error (/bin/csh: bad interpreter) --> the C-shell (csh) package is not installed
-10. sudo apt-get install csh
+8. source StaMPS_CONFIG.bash
+9. mt_prep
+10. if error (/bin/csh: bad interpreter) --> the C-shell (csh) package is not installed
+11. sudo apt-get install csh
