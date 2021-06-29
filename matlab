@@ -8,5 +8,5 @@
 ## Installation
 1. sudo mkdir -p /cdrom
 2. sudo mount /home/your-path/DVD1.ga.iso /cdrom -o loop
-3. WARNING: device write-protected, mounted read-only.
-4. 
+3. --> WARNING: device write-protected, mounted read-only.
+4. Update ubuntu libraries
