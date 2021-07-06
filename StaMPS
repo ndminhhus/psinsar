@@ -31,5 +31,14 @@ Run STep 1 though Step 5 for only one patch at a time
 >>cd ..
 >>stamps(1,8)
 ##Export PS
+>>load parms.mat;
+>>ps_plot('v-do', -1);
+if can not plot and get error like:
+  Can't load '/usr/local/MATLAB/R2016a/bin/glnxa64/libmwosgserver.so'
+#https://stackoverflow.com/questions/38473597/matlab-on-linux-cant-plot-anythingcant-load-libstdc-so-6-version-cxxabi-1
+Solution: find the file name (.matlab7rc.sh) in "path_to_ matlab/bin" then find and uncomment the following line:
+nano .matlab7rc.sh
+LDPATH_PREFIX='$MATLAB/sys/opengl/lib/$ARCH'
+
 ###save ps.kml (generated from ph_disp for every 10 points with an opacity of 0.4
 >> ps_gescatter('ps.kml', ph_disp, 10, 0.4)
