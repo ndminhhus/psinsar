@@ -9,3 +9,21 @@
 9. mt_prep
 10. if error (/bin/csh: bad interpreter) --> the C-shell (csh) package is not installed
 11. sudo apt-get install csh
+12. mt_prep_snap
+When running this process, the amount of the computer load is probably much higher
+than during PS processing. This may cause the program to stop due PC memory limitations. If this
+is the case, the number of patches should be increased. Default is 1. Lets use 3. 
+mt_prep_snap 20201111 /root/.../INSAR_20201111/ 0.4 3
+13. Open matlab : matlab
+## PS processing
+### List of all stamps  parameters:
+>>getparm
+### Increase number of CPU core
+>>setparm('n_cores',4)
+### Optimize parameters
+Run STep 1 though Step 5 for only one patch at a time
+>>cd Patch_1
+>>stamps(1,5)
+
+1. Step 1
+
