@@ -24,6 +24,6 @@ mt_prep_snap 20201111 /root/.../INSAR_20201111/ 0.4 3
 Run STep 1 though Step 5 for only one patch at a time
 >>cd Patch_1
 >>stamps(1,5)
-
-1. Step 1
-
+###Full run
+>>cd ..
+>>stamps(1,8)
