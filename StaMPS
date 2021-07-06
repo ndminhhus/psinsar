@@ -13,12 +13,15 @@
 When running this process, the amount of the computer load is probably much higher
 than during PS processing. This may cause the program to stop due PC memory limitations. If this
 is the case, the number of patches should be increased. Default is 1. Lets use 3. 
-mt_prep_snap 20201111 /root/.../INSAR_20201111/ 0.4 3
+###mt_prep_snap 20201111 /root/.../INSAR_20201111/ 0.4 3
+###For large dataset: 
+mt_prep_snap 20201111 /root/.../INSAR_20201111/ 0.4 8 3
+(above command gives 8  patches  in  range  and  3  in  azimuth,   giving  24  patches  in  total)
 13. Open matlab : matlab
 ## PS processing
 ### List of all stamps  parameters:
 >>getparm
-### Increase number of CPU core
+### Increase number of CPU core for parallel processing
 >>setparm('n_cores',4)
 ### Optimize parameters
 Run STep 1 though Step 5 for only one patch at a time
@@ -27,3 +30,6 @@ Run STep 1 though Step 5 for only one patch at a time
 ###Full run
 >>cd ..
 >>stamps(1,8)
+##Export PS
+###save ps.kml (generated from ph_disp for every 10 points with an opacity of 0.4
+>> ps_gescatter('ps.kml', ph_disp, 10, 0.4)
