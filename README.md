@@ -12,3 +12,9 @@ My first advice is: You don't have to install every sofware/packages at onces. W
 3. Install StaMPS, Matlab in Window Sub system for Linux (WSL) Ubuntu
 
 4. Analysis with StaMPS PS
+# Results
+Out of my curiosity, this is a preliminary investigation of land subsidence in Ho Chi Minh City (HCMC) using Sentinel 1 satellite data. Persistent Scatterer Interferometry (PSI), an advanced remote sensing technique belonging to Interferometry Synthetic Aperture Radar (InSAR), was used to derive displacement of the ground surface over time.
+
+I analyzed 22 pairs of Sentinel 1 SLC images (from 08-06-2020 to 15-02-2021). More than 3 million stable phase pixels were detected and analyzed for deformation analysis over HCMC during this period. Software and open-source Python code were involved, including ESA-SNAP, snap2stamps, and StaMPS. StaMPS Matlab scripts were executed in the Ubuntu environment.
+
+A large amount of satellite data, including 22 raw Sentinel 1 SLC images (4 GB each), was downloaded from The Alaska Satellite Facility (ASF) data portal (not from the Copernicus Open Access Hub because I experienced that downlinks are more stable in ASF). ESA SNAP toolbox 6.0 was used for preprocessing. Then, snap2stamp C++ software was used to prepare input for StaMPS, which eventually produced more than 3 million stable phase pixels. Each pixel contains the velocity of land deformation over HCMC. The figures below show the spatial distribution of Line of Sight (LOS) land subsidence rate
